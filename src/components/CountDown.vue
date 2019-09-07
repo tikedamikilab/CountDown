@@ -9,10 +9,11 @@
       <li><span>{{ minutes }}</span>Minutes</li>
       <li><span>{{ seconds }}</span>Seconds</li>
     </ul>
-    <p class="padding_top_7 padding_bottom_7"> Taro Ikeda, Intelligent Systems Design Laboratory</p>
+    <p class="padding_top_7 padding_bottom_7"> Made by Taro Ikeda, Intelligent Systems Design Laboratory</p>
   </div>
 </template>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
 export default {
   name: "countdown",
@@ -31,8 +32,9 @@ export default {
       minutes: 0,
       seconds:0,
       now: 0,
-      timerObj: null,
     };
+  },
+  computed: {
   },
   methods:{
     countCalc: function(){

@@ -13,10 +13,7 @@
   margin: 0;
   padding: 0;
 }
-.bg_img {
-  background-color: #ffd54f;
-  /* background: url('./bgimgs/img1.jpg'); */
-}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

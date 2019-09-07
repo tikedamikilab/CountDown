@@ -5,8 +5,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
   },
+  bgcnt: 1,
+  maxcnt: 4,
   mutations: {
 
   },
