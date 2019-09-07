@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="padding_top_7 bigtext">{{ msg }}</h1>
+    <h1 class="padding_top_4 bigtext">{{ msg }}</h1>
     <ul>
       <li class="bigtext"><span class="bigtext">{{ days }}</span>days</li>
     </ul>
@@ -9,7 +9,7 @@
       <li><span>{{ minutes }}</span>Minutes</li>
       <li><span>{{ seconds }}</span>Seconds</li>
     </ul>
-    <p class="padding_top_7 padding_bottom_7"> Made by Taro Ikeda, Intelligent Systems Design Laboratory</p>
+    <p class="padding_top_4 padding_bottom_4"> Made by Taro Ikeda, Intelligent Systems Design Laboratory</p>
   </div>
 </template>
 
@@ -68,14 +68,14 @@ h1 {
 }
 
 .bigtext {
-  font-size: 500%;
+  font-size: 600%;
 }
 
-.padding_top_7{
-  padding-top: 7%;
+.padding_top_4{
+  padding-top: 4%;
 }
-.padding_bottom_7{
-  padding-bottom: 7%;
+.padding_bottom_4{
+  padding-bottom: 4%;
 }
 .padding_top_0{
   padding-top: 0;

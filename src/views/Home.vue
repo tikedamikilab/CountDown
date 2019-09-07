@@ -2,16 +2,16 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <div v-if="imgcount===1" class="bg_img1">
-      <CountDown msg="三木光範教授のご退職まで、あと"/>
+      <CountDown msg="三木光範 教授のご退職まで、"/>
     </div>
     <div v-else-if="imgcount===2" class="bg_img2">
-      <CountDown msg="三木光範教授のご退職まで、あと"/>
+      <CountDown msg="三木光範 教授のご退職まで、"/>
     </div>
     <div v-else-if="imgcount===3" class="bg_img3">
-      <CountDown msg="三木光範教授のご退職まで、あと"/>
+      <CountDown msg="三木光範 教授のご退職まで、"/>
     </div>
     <div v-else-if="imgcount===4" class="bg_img4">
-      <CountDown msg="三木光範教授のご退職まで、あと"/>
+      <CountDown msg="三木光範 教授のご退職まで、"/>
     </div>
   </div>
 </template>
