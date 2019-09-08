@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="padding_top_4 bigtext">{{ msg }}</h1>
+    <h1 class="padding_top_2 bigtext">{{ msg }}</h1>
     <ul>
       <li class="bigtext"><span class="bigtext">{{ days }}</span>days</li>
     </ul>
@@ -9,20 +9,23 @@
       <li><span>{{ minutes }}</span>Minutes</li>
       <li><span>{{ seconds }}</span>Seconds</li>
     </ul>
-    <p class="padding_top_4 padding_bottom_4"> Made by Taro Ikeda, Intelligent Systems Design Laboratory</p>
+    <p> Made by Taro Ikeda, Intelligent Systems Design Laboratory</p>
   </div>
 </template>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
+import { Stream } from 'stream';
 export default {
   name: "countdown",
   props: {
-    msg: String
+    msg: String,
   },
   data: function() {
     return {
-      goal: new Date("Mar 30, 2020 00:00:00").getTime(),
+      // goal: new Date("Mar 31, 2020 00:00:00").getTime(),
+      // 同志社大学の卒業式3/22 13:00~
+      goal: new Date("Mar 22, 2020 13:00:00").getTime(),
       second: 1000,
       minute: 60000,
       hour: 3600000,
@@ -68,11 +71,11 @@ h1 {
 }
 
 .bigtext {
-  font-size: 600%;
+  font-size: 480%;
 }
 
-.padding_top_4{
-  padding-top: 4%;
+.padding_top_2{
+  padding-top: 2%;
 }
 .padding_bottom_4{
   padding-bottom: 4%;
@@ -85,9 +88,10 @@ li {
   display: inline-block;
   font-size: 2.5em;
   list-style-type: none;
-  padding: 0.8em;
+  padding: 1%;
   padding-top: 0em;
   text-transform: uppercase;
+  opacity: 0.8;
 }
 
 li span {
